@@ -50,7 +50,7 @@ Recipix er en moderne PWA-klar webapplikasjon laget med React, Vite og Express. 
 
 ## Usage
 
-### Backend
+### Quick Setup (Backend) 
 
 ```bash
 cd recipix/server
@@ -59,7 +59,7 @@ npm install
 npm start
 ```
 
-### Quick Setup (Frontend)
+### Frontend
 
 ```bash
 cd recipix/frontend
