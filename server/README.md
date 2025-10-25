@@ -10,18 +10,26 @@
 ## Install
 
 ```bash
-git clone https://github.com/dittbrukernavn/recipix.git
-cd recipix/frontend
-npm install
-npm run dev
-```
 
-**Starter backend separat:**
+git clone https://github.com/dittbrukernavn/recipix.git
+cd recipix-app                            
+
+```
+## Install
 
 ```bash
-cd ../server
+
+cd server
 npm install
-npm start
+npm run dev
+
+```
+```bash
+
+cd recipix
+npm install
+npm run dev
+
 ```
 
 ---
@@ -158,7 +166,7 @@ node_modules/
 4. Kjør lokalt:
    - Frontend: `npm run dev`
    - Backend: `npm start`
-5. Lag en pull request 🎉
+5. Lag en pull request 
 
 ---
 
