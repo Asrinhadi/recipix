@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReciPix</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      spline-viewer {
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
+        display: block !important;
+      }
+      
+      #root {
+        position: relative !important;
+        z-index: 1 !important;
+      }
+    </style>
+    <script>
+     
+      window.addEventListener('error', function(e) {
+        if (e.filename && e.filename.includes('spline-viewer')) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+          return false;
+        }
+      }, true);
+      
+      const _error = console.error;
+      const _warn = console.warn;
+      
+      console.error = console.warn = function() {
+       
+        return;
+      };
+      
+      
+      setTimeout(() => {
+        console.error = _error;
+        console.warn = _warn;
+      }, 5000);
+    </script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.80/build/spline-viewer.js"></script>
+  </head>
+  <body>
+    <spline-viewer url="https://prod.spline.design/5JllAvmOWK5wY0jC/scene.splinecode"></spline-viewer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
