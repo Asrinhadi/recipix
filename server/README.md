@@ -11,8 +11,8 @@
 
 ```bash
 
-git clone https://github.com/dittbrukernavn/recipix.git
-cd recipix-app                            
+git clone https://github.com/Asrinhadi/recipix.git
+cd recipix-app                      
 
 ```
 ## Install
@@ -32,6 +32,7 @@ npm run dev
 
 ```
 
+
 ---
 
 ## Getting Started
@@ -50,10 +51,10 @@ Recipix er en moderne PWA-klar webapplikasjon laget med React, Vite og Express. 
 
 ## Usage
 
-### Quick Setup (Backend) 
+### Quick Setup s
 
 ```bash
-cd recipix/server
+cd recipix-app/server
 touch .env
 npm install
 npm start
@@ -62,13 +63,11 @@ npm start
 ### Frontend
 
 ```bash
-cd recipix/frontend
+cd recipix-app/recipix
 npm install
 npm run dev
 ```
-
 Appen vil være tilgjengelig på `http://localhost:5173`.
-
 
 
 ---
